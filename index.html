@@ -6,8 +6,7 @@
         <style>
             body {
                 font: 36px/1.4 hemlockr, "helvetica neue", sans-serif;
-                padding: 1em 2em;
-                margin: 0 auto;
+		margin: 0;
                 background: #FDFFFE;
                 color: #AFCC89;
                 max-width: 25em;
@@ -20,7 +19,7 @@
             a:hover {
                 color: #B15656;
             }
-            h1 {
+            h2 {
                 font-size: 48px;
                 margin: .5em;
             }
@@ -37,6 +36,10 @@
                 font-style: normal;
             }
             
+            wrapper {
+                padding: 1em 2em;
+                margin: 0 auto;
+            }
             .head {
                 text-align: center;
                 border: 1px solid;
@@ -68,29 +71,33 @@
             }
         </style>
     </head>
-  <body>
-      <p> Hi, I'm Brian (בריאן).
-        I am interested in semetic and latin typography.
-        By day I write code and design visuals for web applications and little scripts.
-        <a href=mailto:brian@zickzickzick.com>Get in touch</a>?</p>
-      
-      <div class=box>
-      	<div class=head>
-      	  <h1>BibleQE</h1>
-      	</div>
-      	
-      	<div class=body>
-      	  <p>
-      	    A very basic Bible search and indexing experiment of mine.
-      	    Merits: It's simple. Uses lazy file systems reads instead of a DB.
-      	    Has both a command-line and web interface.
-					</p>
-					
-      	  <p class=links>
-      	  	<a href="http://bibleqe.com/">Website</a>
-      	  	<a href="https://github.com/anoxic/bibleqe">Github</a>
-      	  </p>
-      	</div>
-      </div>
-  </body>
+    <body>
+        <wrapper>
+            <p> Hi, I'm Brian (בריאן).
+            I am interested in semetic and latin typography.
+            By day I write code and design visuals for web applications and little scripts.
+            <a href=mailto:brian@zickzickzick.com>Get in touch</a>?</p>
+        </wrapper>
+        
+        <h1>Some Things I've Made</h1>
+        
+        <wrapper>
+            <div class=box>
+                <div class=head> <h2>BibleQE</h2> </div>
+                
+                <div class=body>
+                    <p>
+                    A very basic Bible search and indexing experiment of mine.
+                    Merits: It's simple. Uses lazy file systems reads instead of a DB.
+                    Has both a command-line and web interface.
+                    </p>
+                
+                    <p class=links>
+                    <a href="http://bibleqe.com/">Website</a>
+                    <a href="https://github.com/anoxic/bibleqe">Github</a>
+                    </p>
+                </div>
+            </div>
+        </wrapper>
+    </body>
 </html>
