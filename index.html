@@ -4,6 +4,9 @@
         <meta charset=utf-8>
         <title>Brian M. Zick</title>
         <style>
+        * {
+            font-weight: normal;
+        }
         body {
             font: 36px/1.4 hemlockr, "helvetica neue", sans-serif;
             margin: 0;
@@ -54,9 +57,21 @@
             background: #F4FFEC;
             font-size: 24px;
         }
-        .body p {
+        .body p, .quote {
             max-width: 22em;
             margin: 1em auto;
+        }
+        .quote {
+            margin-bottom: 3em;
+            font-size: .8em;
+            max-width: 20em;
+        }
+        .quote p {
+            display: inline; 
+            position: relative;
+        }
+        p + p {
+            top: 1em;
         }
         .links {
             text-align: center;
@@ -75,6 +90,9 @@
             margin: 1em;
             max-width: 100%;
             font-size: inherit;
+        }
+        .bookmarks h2, .bookmarks h3 {
+            font-weight: bold;
         }
         .bookmarks h2 {
             font-size: 1.3em;
@@ -95,12 +113,14 @@
     </head>
     <body>
         <div class=wrapper>
-            <p> Hi, I'm Brian (בריאן).
-            I am interested in semetic and latin typography.
-            By day I write code and design visuals for web applications and little scripts.</p>
+            <p> Howdy! I'm Brian (בריאן).
+            I'm a full-stack developer, artist, and Githubber working mainly in Ruby and PHP.
+            I have also worked with typefaces and fonts, and have fallen in love with Semetic and Latin typography.
+            Recently I discovered <a href="http://www.urbit.org/">Urbit</a> and have helped make a
+            <a href="/nock.js/nock.htm">Web REPL</a> for Nock.</p>
            
             <p class=links>
-            <a href=mailto:brian@zickzickzick.com>Get in touch</a>
+            <a href=mailto:brian@zickzickzick.com>Contact</a>
             </p>
         </div>
         
@@ -156,7 +176,7 @@
             </div>
         </div>
     
-        <h1>Also</h1>
+        <h1>See Also</h1>
 
         <div class=wrapper>
             <div class=box>
@@ -167,6 +187,7 @@
                         <li><a href="http://zickswebventures.com/">Zick's Web Ventures</a></li>
                         <li><a href="http://rummik.com">The Rambling Al</a></li>
                         <li><a href="http://www.christophermaness.com/">Christopher Maness</a></li>
+                        <li><a href="http://familysafeinternet.com/">Family Safe Internet</a></li>
                     </ul>
                 </div>
             </div>
@@ -180,6 +201,15 @@
                     <script src="https://gist.github.com/anoxic/5091535.js"></script>
                 </div>
             </div>
+        </div>
+
+        <div class=quote>
+            <p>
+            Write the vision, make it clear upon tables, that it may be read swiftly.
+            </p>
+            <p>
+            Habbakuk ii,2
+            </p>
         </div>
     </body>
 </html>
