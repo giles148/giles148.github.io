@@ -54,22 +54,23 @@
             background: #F4FFEC;
             font-size: 24px;
         }
-        .body p, .quote {
+        .body p {
             max-width: 22em;
             margin: 1em auto;
         }
         .quote {
-            margin-bottom: 3em;
+            margin-bottom: 1em auto 3em;
             font-size: .8em;
             max-width: 20em;
         }
-        p {
-            display: inline; 
-            position: relative;
-        }
-        p + p {
-            top: 1em;
-        }
+            .quote p {
+                display: inline; 
+                position: relative;
+            }
+            .quote p + .quote p {
+                top: 1em;
+            }
+            
         .links {
             text-align: center;
         }
@@ -89,10 +90,6 @@
             I have also worked with typefaces and fonts, and have fallen in love with Semetic and Latin typography.
             Recently I discovered <a href="http://www.urbit.org/">Urbit</a> and have helped make a
             <a href="/nock.js/nock.htm">Web REPL</a> for Nock.</p>
-           
-            <p class=links>
-            <a href=mailto:brian@zickzickzick.com>Contact</a>
-            </p>
         </div>
         
         <h1>Some Things I've Made</h1>
@@ -143,12 +140,15 @@
                     </p>
                 </div>
             </div>
-        </div>
-        
-
-        <div class=quote>
-            <p> Write the vision, make it clear upon tables, that it may be read swiftly. </p>
-            <p> Habbakuk ii,2 </p>
+            
+            <p class=links>
+            <a href=mailto:brian@zickzickzick.com>Contact</a>
+            </p>
+            
+            <div class=quote>
+                <p> Write the vision, make it clear upon tables, that it may be read swiftly. </p>
+                <p> Habbakuk ii,2 </p>
+            </div>
         </div>
     </body>
 </html>
